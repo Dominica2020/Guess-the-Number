@@ -6,11 +6,14 @@ print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
 
 number = random.randint(1, 100)
-print(f"Pssst, the correct answer is {number}")
+# print(f"Pssst, the correct answer is {number}")
 
 difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
 
 def difficulty_type(difficulty_level):
+    """ 
+    Returns the number of turns based on the difficulty variable input
+    """
     if difficulty == "easy":
         return 10
     else:
